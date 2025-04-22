@@ -1,0 +1,160 @@
+/* Global body styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+/* Main container */
+.app-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* Header styles */
+.app-header {
+  text-align: center;
+  padding: 1rem;
+  background-color: #2c3e50;
+  color: white;
+  border-radius: 8px;
+}
+
+.app-header h1 {
+  margin-bottom: 0.5rem;
+}
+
+/* Main content layout */
+.app-main {
+  display: flex;
+  flex-direction: row; /* Changed to row to align map and form side by side */
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+/* Form container styling */
+.prediction-form-container {
+  width: 48%; /* Set to 48% so map takes 50% of the space */
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Data visualization container styling */
+.data-visualization {
+  width: 48%; /* Set to 48% to align with the form */
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Prediction form styles */
+.prediction-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Input field styling */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input[type="number"] {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Submit button styles */
+.submit-button {
+  padding: 0.7rem;
+  border: none;
+  background-color: #27ae60;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.submit-button:hover {
+  background-color: #1e8449;
+}
+
+/* Prediction result styles */
+.prediction-result {
+  margin-top: 1.5rem;
+  background-color: #f9f9f9;
+  border-left: 6px solid #27ae60;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* Prediction value styling */
+.prediction-value {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+/* Error message styling */
+.error-message {
+  margin-top: 1rem;
+  color: red;
+  font-weight: bold;
+}
+
+/* Interpretation styling */
+.interpretation {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px dashed #ccc;
+}
+
+/* Data table styling */
+.data-table-container {
+  overflow-x: auto;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.data-table th,
+.data-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.data-table th {
+  background-color: #2c3e50;
+  color: white;
+}
+
+.data-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Map container styles */
+.map-container {
+  width: 100%;  /* Ensures map takes up full width inside its container */
+  height: 400px;  /* Set a fixed height for the map */
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #e6e6e6;
+}
